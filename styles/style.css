@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --cor-primaria: #000000;
+  --cor-texto: #f6f6f6;
+  --cor-terciaria: #22d4fd;
+  --cor-hover: #272727;
+
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+a {
+  text-decoration: none;
+}
+
+.home__header {
+  padding: 2% 0 0 10%;
+}
+
+.home__navigation {
+  display: flex;
+  gap: 80px;
+}
+
+.nav__a {
+  color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+}
+
+.nav__a:hover {
+  opacity: 0.7;
+}
+
+.home__main__text {
+  color: var(--cor-texto);
+  font-size: 2.5rem;
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+}
+
+.home__main__text > strong {
+  color: var(--cor-terciaria);
+}
+
+.home__text {
+  color: var(--cor-texto);
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+}
+
+.home__second__text {
+  color: var(--cor-texto);
+  font-size: 1.5rem;
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+}
+
+.home__social__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid var(--cor-terciaria) 2px;
+  padding: 16px;
+  border-radius: 8px;
+  gap: 20px;
+  color: var(--cor-texto);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--fonte-secundaria);
+  margin-bottom: 30px;
+}
+
+.home__social__button:hover {
+  opacity: 0.7;
+}
+
+.home__main {
+  padding: 5% 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.home__main__apresentation {
+  display: flex;
+  width: 50%;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.home__image {
+  width: 50%;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--fonte-secundaria);
+}
+
+@media (max-width: 1200px) {
+  .home__header {
+    padding: 10%;
+  }
+  .home__navigation {
+    justify-content: center;
+  }
+  .home__main {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+  .home__main__apresentation {
+    width: auto;
+  }
+}
